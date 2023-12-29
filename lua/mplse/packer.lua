@@ -11,18 +11,12 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-	  'folke/tokyonight.nvim',
-	  as = 'tokyonight',
-	  config = function()
-		  vim.cmd('colorscheme tokyonight-storm')
-	  end
-  })
 
   use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
-
+  use("rebelot/kanagawa.nvim")
+ 
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
